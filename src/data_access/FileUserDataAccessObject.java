@@ -96,4 +96,9 @@ public class FileUserDataAccessObject implements SignupUserDataAccessInterface, 
         return accounts.containsKey(identifier);
     }
 
+    public void clear(){
+        this.accounts.clear();
+        this.save();
+    }
+
 }
